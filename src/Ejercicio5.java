@@ -24,9 +24,10 @@ public class Ejercicio5 {
 			System.out.println("Introduce el número que deseas convertir a numero binario: ");
 			int num = Integer.parseInt(sc.nextLine());
 			
-			String binario = Integer.toBinaryString(num);
-
+			//Llamamos al método especifico
+			String binario = aBinario(num);
 			
+						
 			// imprimimos el resultado
 			System.out.println("El binario de " + num + " es " + binario+".");
 
@@ -34,5 +35,9 @@ public class Ejercicio5 {
 			sc.close();
 		}
 		
-		
+		public String aBinario(int num) {
+			String binario = Integer.toBinaryString(num);
+			
+			return binario;
+		}
 }
