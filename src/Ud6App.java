@@ -27,7 +27,10 @@ public class Ud6App {
 //		ej7.converterApp();
 		
 		Ejercicio8 ej8 = new Ejercicio8();
-		ej8.arrayApp();
+//		ej8.arrayApp();
+		
+		Ejercicio9 ej9 = new Ejercicio9();
+		ej9.arraySumaApp();
 
 	}
 
