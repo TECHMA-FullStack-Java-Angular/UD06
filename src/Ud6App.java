@@ -12,7 +12,10 @@ public class Ud6App {
 //		ej2.generaApp();
 		
 		Ejercicio3 ej3 = new Ejercicio3();
-		ej3.numPrimoApp();
+//		ej3.numPrimoApp();
+		
+		Ejercicio4 ej4 = new Ejercicio4();
+		ej4.factorialApp();
 
 	}
 
