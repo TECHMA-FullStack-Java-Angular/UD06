@@ -6,34 +6,37 @@ import java.util.Scanner;
  *   Por ejemplo, si introducimos un 5, realizara esta operación 5*4*3*2*1=120.*/
 
 public class Ejercicio4 {
-	
-	//Inicializamos variables
+
+	// Inicializamos variables
 	int num;
 	
+	//Creamos el metodo general de la App
 	public void factorialApp() {
-	
-			// Inicializamos el scanner
-			Scanner sc = new Scanner(System.in);
 
-			// Imprimimos el mensaje de bienvenida
+		// Inicializamos el scanner
+		Scanner sc = new Scanner(System.in);
 
-			System.out.println("Bienvenido a la App Calcula el Factorial!");
+		// Imprimimos el mensaje de bienvenida
 
-			// Solicitamos el rango de numeros deseado
-			System.out.println("Introduce el número que deseas calcular el factorial: ");
-			num = Integer.parseInt(sc.nextLine());
-			
-			//Llamamos al metodo especifico pasando el numero indicado como parámetro
-			System.out.println("El factorial de "+num+" es "+ factorial(num));
-			
-			// Cerramos el scanner
-			sc.close();
+		System.out.println("Bienvenido a la App Calcula el Factorial!");
+
+		// Solicitamos el rango de numeros deseado
+		System.out.println("Introduce el número que deseas calcular el factorial: ");
+		num = Integer.parseInt(sc.nextLine());
+
+		// Llamamos al metodo especifico pasando el numero indicado como parámetro e
+		// imprimimos el resultado
+		System.out.println("El factorial de " + num + " es " + factorial(num));
+
+		// Cerramos el scanner
+		sc.close();
 	}
-	
+
+	// Creamos un metodo especifico para poner la logica y que devuelva el resultado
 	public int factorial(int num) {
-		int resultado=1;
-		for (int i=1; i<=num; i++) {
-			resultado = (resultado*i);
+		int resultado = 1;
+		for (int i = 1; i <= num; i++) {
+			resultado = resultado * i;
 		}
 		return resultado;
 	}
