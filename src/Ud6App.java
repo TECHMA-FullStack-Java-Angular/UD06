@@ -21,7 +21,10 @@ public class Ud6App {
 //		ej5.binarioApp();
 		
 		Ejercicio6 ej6 = new Ejercicio6();
-		ej6.cifrasApp();
+//		ej6.cifrasApp();
+		
+		Ejercicio7 ej7 = new Ejercicio7();
+		ej7.converterApp();
 
 	}
 

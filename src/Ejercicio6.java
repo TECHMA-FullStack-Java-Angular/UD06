@@ -17,20 +17,26 @@ public class Ejercicio6 {
 		// Imprimimos el mensaje de bienvenida
 
 		System.out.println("Bienvenido a la App Calculo de Cifras de numeros enteros positivos!");
+
+		// Creamos un try/catch block para controlar que no salte un error al poner un
+		// numero que
+		// no sea entero
 		try {
+
+			// Hacemos un bucle do/While para que solicite un numero hasta que sea positivo
 			do {
-				// Solicitamos el rango de numeros deseado
+				// Solicitamos el numero
 				System.out.println(
 						"Introduce el número que deseas calcular el numero de cifras\n(El número introducido debe ser entero positivo): ");
 
+				// Parseamos a int
 				num = Integer.parseInt(sc.nextLine());
-				// Llamamos al metodo especifico pasando en numero introducido como aprámetro e
-				// imprimimos el resultado
-				
-				
 
 			} while (num < 0);
-			
+
+			// Llamamos al metodo especifico pasando en numero introducido como parámetro e
+			// imprimimos el resultado
+
 			numControlado = num;
 			System.out.println("El número " + num + " tiene " + calculoCifra(numControlado) + " cifras.");
 
@@ -38,7 +44,7 @@ public class Ejercicio6 {
 			System.out.println("El número introducido no es entero:" + e.getMessage());
 
 		}
-		
+
 		// Cerramos el scanner
 		sc.close();
 	}
