@@ -23,13 +23,16 @@ public class Ejercicio1 {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Bienvenido a la app Calcule el área!");
-		System.out.println("Introduce la figura a la que deseas calcular el area:\n (circulo, cuadrado o triangulo) ");
+		System.out.println("Introduce la figura a la que deseas calcular el area:\n "
+				+ "(circulo, cuadrado o triangulo) ");
 		
-		//Recuperamos la figura introducida y normalizamos a lowercase y sin signos de acentuación
+		//Recuperamos la figura introducida y normalizamos a lowercase y sin signos de 
+		//acentuación
 		String figura = sc.nextLine().toLowerCase();
-		figura = Normalizer.normalize(figura, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
+		figura = Normalizer.normalize(figura, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]","");
 		
-		//Creamos un condicional switch para saltar al metodo indicado segun la figura introducida
+		//Creamos un condicional switch para saltar al metodo indicado segun la figura 
+		//introducida
 		switch(figura) {
 		
 		case "circulo":
@@ -67,7 +70,8 @@ public class Ejercicio1 {
 	
 	public void areaTriangulo(double base, double altura) {
 		area=(base*altura)/2;
-		System.out.println("El area del triangulo con base de "+base+" y altura de "+altura+" es "+area+".");
+		System.out.println("El area del triangulo con base de "+base+" y altura de "+altura+
+				" es "+area+".");
 	}
 	
 	public void areaCuadrado(double lado) {
