@@ -18,7 +18,10 @@ public class Ud6App {
 //		ej4.factorialApp();
 		
 		Ejercicio5 ej5 = new Ejercicio5();
-		ej5.binarioApp();
+//		ej5.binarioApp();
+		
+		Ejercicio6 ej6 = new Ejercicio6();
+		ej6.cifrasApp();
 
 	}
 
