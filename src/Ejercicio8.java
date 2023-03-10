@@ -40,7 +40,7 @@ public class Ejercicio8 {
 
 	public void mostrarArray(int[] num) {
 		
-		System.out.println("Has creaado la siguiente Array: "+Arrays.toString(num));
+		System.out.println("Has creado la siguiente Array: "+Arrays.toString(num));
 		
 	}
 
