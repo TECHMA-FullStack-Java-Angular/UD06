@@ -30,7 +30,10 @@ public class Ud6App {
 //		ej8.arrayApp();
 		
 		Ejercicio9 ej9 = new Ejercicio9();
-		ej9.arraySumaApp();
+//		ej9.arraySumaApp();
+		
+		Ejercicio10 ej10 = new Ejercicio10();
+		ej10.arrayPrimoApp();
 
 	}
 

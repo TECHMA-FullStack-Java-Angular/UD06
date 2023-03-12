@@ -7,56 +7,58 @@ import java.util.Scanner;
  * para rellenar el array(que tenga como parámetros los numeros entre los que tenga 
  * que generar) y otro para mostrar el contenido y la suma del array.*/
 
-
 public class Ejercicio9 {
-	
+
 	// Inicializamos variables
 	int num[];
-	int suma=0;
+	int suma = 0;
 
-				
 	// Inicializamos el scanner
-				Scanner sc = new Scanner(System.in);
+	Scanner sc = new Scanner(System.in);
 
-		// Creamos el metodo general de la App
-		public void arraySumaApp() {
+	// Creamos el metodo general de la App
+	public void arraySumaApp() {
 
-			// Imprimimos el mensaje de bienvenida
-			 
-			
-			System.out.println("Bienvenido a la App Crea y suma valores en un array!");
+		// Imprimimos el mensaje de bienvenida
+		System.out.println("Bienvenido a la App Crea y suma valores en un array!");
 
-			// Solicitamos que introduzca el tamaño del array
-			System.out.println("Introduzca el tamaño del array a crear: ");
-			num = new int[Integer.parseInt(sc.nextLine())];
+		// Solicitamos que introduzca el tamaño deseado del array parseado a int
+		System.out.println("Introduzca el tamaño del array a crear: ");
+		num = new int[Integer.parseInt(sc.nextLine())];
 
-			
-			rellenarArray(0,9,num);
+		// llamamos al metodo propio para rellenar el array con numeros aleatorios de 0
+		// a 9
+		rellenarArray(0, 9, num);
 
-			// Mostramos Array a través de un metodo propio
-			mostrarSumarArray(num, suma);
+		// Mostramos Array y la suma de sus componentes a través de un metodo propio
+		mostrarSumarArray(num, suma);
 
-			// Cerramos el scanner
-			
+		// Cerramos el scanner
+		sc.close();
+	}
+
+	// Metodo para rellenar array con numeros aleatorios de de rango especifico
+	public void rellenarArray(int min, int max, int[] num) {
+
+		// Rellenamos el array según el tamaño indicado con numeros aleatorios
+		// No ha solicitado que los numeros no se repitan
+		for (int i = 0; i < num.length; i++) {
+
+			num[i] = (int) (Math.floor(Math.random() * (max - min + 1)) + min);
 		}
-		
-		public void rellenarArray(int min, int max, int[] num) {
+	}
 
-			// Rellenamos el array según el tamaño indicado con numeros aleatorios
-			// No ha solicitado que los numeros no se repitan
-			for (int i = 0; i < num.length; i++) {
+	//Metodo para mostrar array y mostrar suma de elementos de array
+	public void mostrarSumarArray(int num[], int suma) {
+		
+		//mostrar array
+		System.out.println("La Array creada es: " + Arrays.toString(num));
 
-				num[i] = (int) (Math.floor(Math.random() * (max - min + 1)) + min);
-			}
+		//sumar elementos del array
+		for (int i = 0; i < num.length; i++) {
+			suma += num[i];
 		}
-		
-		public void mostrarSumarArray(int num[], int suma) {
-			System.out.println("La Array creada es: "+Arrays.toString(num));
-			
-			for (int i = 0; i < num.length; i++) {
-				suma += num[i];
-			}
-			System.out.println("La suma de los valores de la Array es: "+suma);
-		}
-		
+		System.out.println("La suma de los valores de la Array es: " + suma);
+	}
+
 }
