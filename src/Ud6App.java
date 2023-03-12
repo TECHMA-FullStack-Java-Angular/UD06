@@ -34,6 +34,9 @@ public class Ud6App {
 		
 		Ejercicio10 ej10 = new Ejercicio10();
 		ej10.arrayPrimoApp();
+		
+		Ejercicio11 ej11 = new Ejercicio11();
+//		ej11.reasignaArrayApp();
 
 	}
 
