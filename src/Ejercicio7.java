@@ -14,7 +14,7 @@ public class Ejercicio7 {
 	double monedaFinal;
 
 	// Creamos el metodo general de la App
-	public void converterApp() {
+	public void euroConverter() {
 
 		// Inicializamos el scanner
 		Scanner sc = new Scanner(System.in);

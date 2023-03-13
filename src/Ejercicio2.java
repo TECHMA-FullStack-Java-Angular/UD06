@@ -16,7 +16,7 @@ public class Ejercicio2 {
 	int max;
 	int numAl[];
 
-	public void generaApp() {
+	public void generaNum() {
 
 		// Inicializamos el scanner
 		Scanner sc = new Scanner(System.in);

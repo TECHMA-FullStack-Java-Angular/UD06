@@ -21,7 +21,7 @@ public class Ejercicio11 {
 	Scanner sc = new Scanner(System.in);
 
 	// Creamos el metodo general de la App
-	public void reasignaArrayApp() {
+	public void reasignaArray() {
 
 		// Imprimimos el mensaje de bienvenida
 		System.out.println("Bienvenido a la App reasigna valores de array!");

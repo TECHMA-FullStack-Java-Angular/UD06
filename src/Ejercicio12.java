@@ -18,7 +18,7 @@ public class Ejercicio12 {
 	Scanner sc = new Scanner(System.in);
 
 	// Creamos el metodo general de la App
-	public void personalizaArrayApp() {
+	public void personalizaArray() {
 
 		// Imprimimos el mensaje de bienvenida
 		System.out.println("Bienvenido a la App personaliza el array!");

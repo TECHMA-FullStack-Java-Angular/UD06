@@ -17,7 +17,7 @@ public class Ejercicio10 {
 	Scanner sc = new Scanner(System.in);
 
 	// Creamos el metodo general de la App
-	public void arrayPrimoApp() {
+	public void arrayPrimo() {
 
 		// Imprimimos el mensaje de bienvenida
 		System.out.println("Bienvenido a la App Crea array de numero primos!");

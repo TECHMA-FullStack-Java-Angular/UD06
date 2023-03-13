@@ -10,7 +10,7 @@ public class Ejercicio6 {
 	int num;
 	int numControlado;
 
-	public void cifrasApp() {
+	public void cifrasCont() {
 		// Inicializamos el scanner
 		Scanner sc = new Scanner(System.in);
 

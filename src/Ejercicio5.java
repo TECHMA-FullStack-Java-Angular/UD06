@@ -11,7 +11,7 @@ public class Ejercicio5 {
 	
 	
 	//Creamos el metodo general de la App
-		public void binarioApp() {
+		public void binarioConv() {
 
 			// Inicializamos el scanner
 			Scanner sc = new Scanner(System.in);

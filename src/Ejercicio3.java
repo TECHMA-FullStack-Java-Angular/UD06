@@ -8,7 +8,7 @@ public class Ejercicio3 {
 	
 	
 //Metodo general de la App
-	public void numPrimoApp() {
+	public void numPrimo() {
 
 		boolean primo = false;
 		int num;

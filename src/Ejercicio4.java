@@ -11,7 +11,7 @@ public class Ejercicio4 {
 	int num;
 	
 	//Creamos el metodo general de la App
-	public void factorialApp() {
+	public void calculaFactorial() {
 
 		// Inicializamos el scanner
 		Scanner sc = new Scanner(System.in);

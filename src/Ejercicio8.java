@@ -14,7 +14,7 @@ public class Ejercicio8 {
 	Scanner sc = new Scanner(System.in);
 
 	// Creamos el metodo general de la App
-	public void arrayApp() {
+	public void rellenaArray() {
 
 		// Imprimimos el mensaje de bienvenida
 

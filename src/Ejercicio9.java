@@ -17,7 +17,7 @@ public class Ejercicio9 {
 	Scanner sc = new Scanner(System.in);
 
 	// Creamos el metodo general de la App
-	public void arraySumaApp() {
+	public void arraySuma() {
 
 		// Imprimimos el mensaje de bienvenida
 		System.out.println("Bienvenido a la App Crea y suma valores en un array!");
